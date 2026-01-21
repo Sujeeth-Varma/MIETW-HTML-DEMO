@@ -38,16 +38,56 @@
 //   console.log(nums[i] * nums[i]);
 // }
 
-const data = {
-  name: "username",
-  email: "random@gmail.com",
-  phone: [1234, 2453],
-  address: {
-    city: "Hyd",
-    state: "TS",
-  },
-};
+// const data = {
+//   name: "username",
+//   email: "random@gmail.com",
+//   phone: [1234, 2453],
+//   address: {
+//     city: "Hyd",
+//     state: "TS",
+//   },
+// };
 
-// console.log(data);
-console.log(data.name);
-console.log(data.address.city);
+// const addr = data.address;
+
+// const { name: username, email: useremail, phone, address } = data;
+
+// console.log(addr);
+
+// console.log(username);
+// console.log(useremail);
+// console.log(address);
+
+// // console.log(data);
+// console.log(data.name);
+// console.log(data.address.city);
+// const { city, state } = address;
+// console.log(city);
+// console.log(state);
+
+const users = [
+  {
+    name: "username",
+    email: "random@gmail.com",
+    phone: [1234, 2453],
+    address: {
+      city: "Hyd",
+      state: "TS",
+    },
+  },
+  {
+    name: "username-2",
+    email: "random2@gmail.com",
+    phone: [1234, 2453],
+    address: {
+      city: "Bnglr",
+      state: "KA",
+    },
+  },
+];
+
+// console.log(users);
+
+users.map((user) => {
+  console.log(user.address.city);
+});
